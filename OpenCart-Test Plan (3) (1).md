@@ -15,27 +15,27 @@
 
 **Table of Content:**
 
-1. Introduction
-   1. Project objective
-   1. Functionalities in scope
-   1. Functionalities and tests out of scope
-1. Test process
-   1. Test planning
-   1. Test analysis
-   1. Test design
-   1. Test implementation
-   1. Test execution
-   1. Test closure
-   1. Test monitoring and control
-1. Test deliverables
-   1. Test plan
-   1. Test conditions
-   1. Test cases
-   1. Daily test summary reports
-   1. Traceability matrix
-   1. Test case results
-   1. Bugs report
-   1. Test completion report
+   .Introduction
+   .Project objective
+   .Functionalities in scope
+   .Functionalities and tests out of scope
+   .Test process
+   . Test planning
+   .Test analysis
+   . Test design
+   . Test implementation
+   . Test execution
+   . Test closure
+   . Test monitoring and control
+   .Test deliverables
+   . Test plan
+   . Test conditions
+   . Test cases
+   . Daily test summary reports
+   . Traceability matrix
+   . Test case results
+   . Bugs report
+   . Test completion report
 
  
 
