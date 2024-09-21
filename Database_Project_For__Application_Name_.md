@@ -101,108 +101,96 @@ After the testing process, I deleted the data that was no longer relevant in ord
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
 
-**- Select all customers:**  **SELECT** * **FROM** Customers;
+## **1. Select all customers:** 
+**SELECT** * **FROM** Customers;
 
-**- Selection of products priced over 1000:**  **SELECT** * **FROM** Products **WHERE** price > 1000;
+## **2. Selection of products priced over 1000:** 
+**SELECT** * **FROM** Products **WHERE** price > 1000;
 
 
-**- Select John Doe customer orders:** 
-
+## **3. Select John Doe customer orders:** 
 **SELECT** Orders.order_id, Orders.order_date **FROM** Orders
 **JOIN** Customers **ON** Orders.customer_id = Customers.customer_id
 **WHERE** Customers.customer_name = 'John Doe';
 
 
-**- Select orders and associated products:** 
-
+## **4. Select orders and associated products:** 
 **SELECT** Orders.order_id, Products.product_name, Order_Products.quantity **FROM** Orders
 **JOIN** Order_Products **ON** Orders.order_id = Order_Products.order_id
 **JOIN** Products **ON** Order_Products.product_id = Products.product_id;
 
 
-**- Aggregate functions: the total number of products ordered:** 
-
+## **5. Aggregate functions: the total number of products ordered:** 
 **SELECT COUNT**(*) AS total_products **FROM** Order_Products;
 
 
-**- Group by and having: group orders on customers with more than one order:**
-
+## **6. Group by and having: group orders on customers with more than one order:**
 **SELECT** customer_id, **COUNT**(*) as total_orders 
 **FROM** Orders
 **GROUP BY** customer_id
 **HAVING COUNT**(*) > 1;
 
 
-**-Extract the orders that were placed by a specific customer and processed by a specific employee :**
-
+## **7. Extract the orders that were placed by a specific customer and processed by a specific employee :**
 **SELECT** orders.order_id, orders.order_date, customers.customer_name, employees.employee_name **FROM** orders
 **INNER JOIN** customers **ON** orders.customer_id = customers.customer_id
 **INNER JOIN** employees **ON** orders.employee_id = employees.employee_id
 **WHERE** customers.customer_name = 'John Doe' **AND** employees.employee_name = 'Jane Smith';
 
 
-**Extract products that belong to a certain category or have a price greater than 100:**
-
+## **8. Extract products that belong to a certain category or have a price greater than 100:**
 **SELECT** product_name, price, product_category
 **FROM** products
 **WHERE** product_category = 'Electronics' **OR** price > 100;
 
 
-**Extract all orders that have not been processed by a specific employee:**
-
+## **9. Extract all orders that have not been processed by a specific employee:**
 **SELECT** orders.order_id, orders.order_date, employees.employee_name
 **FROM** orders
 **INNER JOIN** employees **ON** orders.employee_id = employees.employee_id
 **WHERE NOT** employees.employee_name = 'Jane Smith';
 
 
-**Extract customers who have "gmail" in their email address:**
-
+## **10. Extract customers who have "gmail" in their email address:**
 **SELECT** customer_name, email
 **FROM** customers
 **WHERE** email **LIKE** '%gmail.com';
 
 
-**Extract all orders and products associated with each order:**
-
+## **11. Extract all orders and products associated with each order:**
 **SELECT** orders.order_id, products.product_name, order_products.quantity
 **FROM** orders
 **INNER JOIN** order_products **ON** orders.order_id = order_products.order_id
 **INNER JOIN** products **ON** order_products.product_id = products.product_id;
 
 
-**Extract all orders, including those that have no associated products (if such cases exist):**
-
+## **12. Extract all orders, including those that have no associated products (if such cases exist):**
 **SELECT** orders.order_id, order_products.product_id, products.product_name
 **FROM** orders
 **LEFT JOIN** order_products **ON** orders.order_id = order_products.order_id
 **LEFT JOIN** products **ON** order_products.product_id = products.product_id;
 
 
-**Extract all possible combinations of customers and products:**
-
+## **13. Extract all possible combinations of customers and products:**
 **SELECT** customers.customer_name, products.product_name
 **FROM** customers
 **CROSS JOIN** products;
 
 
-**Extract the total amount of products ordered in a particular order:**
-
+## **14. Extract the total amount of products ordered in a particular order:**
 **SELECT** order_id, **SUM**(order_products.quantity) **AS** total_quantity
 **FROM** order_products
 **GROUP BY** order_id;
 
 
-**Calculate the average price of products in a certain category:**
-
+## **15. Calculate the average price of products in a certain category:**
 **SELECT** product_category, **AVG**(price) **AS** average_price
 **FROM** products
 **WHERE** product_category = 'Electronics'
 **GROUP BY** product_category;
 
 
-**Count how many customers have placed orders:**
-
+## **16. Count how many customers have placed orders:**
 **SELECT COUNT**(**DISTINCT** customer_id) **AS** total_customers
 **FROM** orders;
 
