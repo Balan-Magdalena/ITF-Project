@@ -32,12 +32,17 @@ The tables are connected in the following way:
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-  **CREATE DATABASE OnlineStore, 
-    CREATE TABLE Customers(customer_id, customer_name, address, email),
-    CREATE TABLE Employees(employee_id employee_name, job_title),
-    CREATE TABLE Products(product_id, product_name, price, category),
-    CREATE TABLE Orders(order_id, order_date, customer_id, employee_id),
-    CREATE TABLE Order_Products(order_id, product_id, quantity)** 
+  **CREATE DATABASE OnlineStore,** 
+  
+  **CREATE TABLE Customers(customer_id, customer_name, address, email),**
+    
+  **CREATE TABLE Employees(employee_id employee_name, job_title),**
+    
+  **CREATE TABLE Products(product_id, product_name, price, category),**
+    
+  **CREATE TABLE Orders(order_id, order_date, customer_id, employee_id),**
+    
+  **CREATE TABLE Order_Products(order_id, product_id, quantity).** 
    
     
 
@@ -79,16 +84,16 @@ The tables are connected in the following way:
 
   After the insert, in order to prepare the data to be better suited for the testing process, I updated some data in the following way:
 
-  **Inserati aici toate instructiunile de UPDATE pe care le-ati scris folosind filtrarile necesare astfel incat sa actualizati doar datele de care aveti nevoie**
+ **-Update customer address with customer_id = 1 : UPDATE Customers SET address = '789 Elm St' WHERE customer_id = 1**
+
+ **-Update price for product with product_id = 2 : UPDATE Products SET price = 850.00 WHERE product_id = 2**
 
 
   <li>DQL (Data Query Language)</li>
 
 After the testing process, I deleted the data that was no longer relevant in order to preserve the database clean: 
 
-**-Update customer address with customer_id = 1 : UPDATE Customers SET address = '789 Elm St' WHERE customer_id = 1**
 
-**-Update price for product with product_id = 2 : UPDATE Products SET price = 850.00 WHERE product_id = 2**
 
 
 In order to simulate various scenarios that might happen in real life I created the following queries that would cover multiple potential real-life situations:
