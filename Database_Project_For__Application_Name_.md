@@ -156,17 +156,19 @@ In order to simulate various scenarios that might happen in real life I created 
 **CROSS JOIN** products;
 
 **Extract the total amount of products ordered in a particular order:**
-**SELECT** order_id, SUM(order_products.quantity) AS total_quantity
+**SELECT** order_id, **SUM**(order_products.quantity) **AS** total_quantity
 **FROM** order_products
 **GROUP BY** order_id;
 
+**Calculate the average price of products in a certain category:**
+**SELECT** product_category, **AVG**(price) **AS** average_price
+**FROM** products
+**WHERE** product_category = 'Electronics'
+**GROUP BY** product_category;
 
-
-
-
-
-
-
+**Count how many customers have placed orders:**
+**SELECT COUNT**(**DISTINCT** customer_id) **AS** total_customers
+**FROM** orders;
 
 <br>
 <br>
@@ -175,6 +177,6 @@ In order to simulate various scenarios that might happen in real life I created 
 
 <li>Conclusions</li>
 
-**Inserati aici o concluzie cu privire la ceea ce ati lucrat, gen lucrurile pe care le-ati invatat, lessons learned, un rezumat asupra a ceea ce ati facut si orice alta informatie care vi se pare relevanta pentru o concluzie finala asupra a ceea ce ati lucrat**
+**This project has helped me apply all the concepts learned throughout the course, from creating the database and relationships between tables to manipulating and querying the data. I have learned how to use complex instructions, work with different types of table relationships, and utilize aggregate functions to analyze data. Additionally, I have learned how to optimize the database structure by using ALTER statements.**
 
 </ol>
