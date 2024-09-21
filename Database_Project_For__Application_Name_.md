@@ -13,6 +13,9 @@ Database description: **The purpose of this database is to manage information ab
 <br>
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
 
+![image](https://github.com/user-attachments/assets/e2de61f2-3163-4479-94d0-040a1c9b6310)
+
+
 The tables are connected in the following way:
 
 <ul>
