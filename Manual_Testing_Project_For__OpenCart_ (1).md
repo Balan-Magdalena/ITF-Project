@@ -178,7 +178,7 @@ involved in the validation process
 
 <h3>1.6. Test Execution </h3>
 
-Test cases are executed on the created test Cycle summary: **Admin login, Login user, Register user, Wish list, Add to cart, Delete gift certificate, Gift certificate, Wish list**
+Test cases are executed on the created test Cycle summary: **Admin login, Login user, Register user, Wish list, Add to cart, Delete gift certificate, Gift certificate, Wish list, Add Product to Shopping Cart, Complete Purchase**
 
 Bugs have been created based on the failed tests. The complete bug reports can be found here: [PDF (Jira)2.pdf](https://github.com/user-attachments/files/17081441/PDF.Jira.2.pdf)
 
@@ -213,6 +213,7 @@ The following is a summary of the bugs that have been found:
 	
 -Visual bug for description field - **Medium**
 
+
 Full regression testing is needed on the impacted areas after the bugs are fixed and retesting will be done for every functionality that was previously failed.
 
 <h3> 1.7 Test Completion</h3>
@@ -226,11 +227,11 @@ Test execution chart was generated and can be found below.
 [Test execution chart.pdf](https://github.com/user-attachments/files/17081510/Test.execution.chart.pdf)
 
 
-The final report shows that a number 4 tests have failed of a total of 7.
+The final report shows that a number 4 tests have failed of a total of 10.
 
 A number of 14 total bugs were found, from which the priority is: 5 are high and 9 are medium.
 
-Following the testing of the OpenCart Demo platform, a total of 7 tests were created and executed. Out of these, 4 tests failed, leading to the discovery of 14 bugs.
+Following the testing of the OpenCart Demo platform, a total of 10 tests were created and executed. Out of these, 4 tests failed, leading to the discovery of 14 bugs.
 
 Requirements Coverage: Approximately 85% of the requirements within the scope of testing were covered, and all major modules such as product management, user account management, and the checkout process were successfully tested. However, certain functionalities, such as third-party payment integration, were not fully tested due to time constraints.
 
