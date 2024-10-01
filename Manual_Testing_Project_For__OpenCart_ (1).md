@@ -154,7 +154,8 @@ The testing process will be executed based on the application requirements.</b>.
 
 The following test conditions were found: <br>
 
-![image](https://github.com/user-attachments/assets/0f830561-fa2d-4602-bc28-1a9448d13c8f)
+![image](https://github.com/user-attachments/assets/d87545cf-a8bf-42c4-b154-f5ea23591002)
+
 
 
 
