@@ -225,7 +225,8 @@ The traceability matrix was generated and can be found here: [Forward Traceabili
 
 Test execution chart was generated and can be found below. 
 
-[Test execution chart.pdf](https://github.com/user-attachments/files/17081510/Test.execution.chart.pdf)
+[Test.execution.chart.pdf](https://github.com/user-attachments/files/17209666/Test.execution.chart.pdf)
+
 
 
 The final report shows that a number 4 tests have failed of a total of 10.
