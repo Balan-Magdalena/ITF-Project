@@ -145,7 +145,8 @@ make sure that new risks are identified in time and managed accordingly
 - In case new risks will appear they will be mitigated or a contingency plan will be set
 in place to make sure that the negative effects will not stop us from fulfilling the
 testing objectives that were defined in the planning phase.
-![image](https://github.com/user-attachments/assets/e04580ed-0ca5-4301-9dde-f4522215ca2f)
+![image](https://github.com/user-attachments/assets/f3476a67-a033-4156-bbb2-1aed4d53cbb1)
+
 
 
 <h3> 1.3 Test Analysis </h3>
