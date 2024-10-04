@@ -221,7 +221,8 @@ Full regression testing is needed on the impacted areas after the bugs are fixed
 <h3> 1.7 Test Completion</h3>
 As the Exit criteria were met and satisfied as mentioned in the appropriate section, this feature is suggested to ‘Go Live’ by the Testing team
 
-The traceability matrix was generated and can be found here: [Forward Traceability_21_9_2024.xlsx](https://github.com/user-attachments/files/17081467/Forward.Traceability_21_9_2024.xlsx)
+The traceability matrix was generated and can be found here: [Forward Traceability_4_10_2024.xlsx](https://github.com/user-attachments/files/17257233/Forward.Traceability_4_10_2024.xlsx)
+
 
 
 Test execution chart was generated and can be found below. 
